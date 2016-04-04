@@ -8,7 +8,7 @@ package activejavademo;
  *
  * @author omi
  */
-@DBSettings(databaseName="pppp")
+@DBSettings(databaseName="test")
 public class Test extends Model{
     
     public int a;

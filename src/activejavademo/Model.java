@@ -77,7 +77,7 @@ public class Model {
         q = q.substring(0, q.length()-1)+")";
         sql = sql + q + ";";
       
-        //System.out.println("final sql: "+sql);
+        System.out.println("final sql: "+sql);
         
         
         Connection con = null;
@@ -111,7 +111,7 @@ public class Model {
           
           Class<?> c = this.getClass();
           this.tableName = c.getSimpleName();
-          //System.out.println("table name: "+tableName);
+          System.out.println("table name: "+tableName);
           this.fields = c.getDeclaredFields();
           
           
@@ -175,7 +175,7 @@ public class Model {
             sql = sql + p;
         }
         sql = sql.substring(0, sql.length()-1)+")";
-        //System.out.println("final sql: "+sql);
+        System.out.println("final sql: "+sql);
         
         Connection con = null;
         Statement stmt = null;
