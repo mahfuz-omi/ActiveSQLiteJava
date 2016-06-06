@@ -38,6 +38,10 @@ public class Select {
     private void initializeAnnotations()
     {
           Annotation[] annotations = className.getAnnotations();
+          if(annotations.length == 0)
+          {
+              this.databaseName = "Test";
+          }
 
           for(Annotation annotation : annotations)
           {
